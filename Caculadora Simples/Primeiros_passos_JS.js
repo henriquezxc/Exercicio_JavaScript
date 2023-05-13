@@ -26,11 +26,29 @@ function Multiplicar() {
         document.getElementById('resultado').value = Resultado_Multiplicar;
     } else {
         // Impressão da mensagem de erro
-        document.getElementById('resultado').value = '  Sem valores para Calcular';
+        document.getElementById('resultado').value = '  Sem valores para Calcular'
+    };
+}
+
+function Subtrair() {
+    var entrada_5 = parseInt(document.getElementById('soma').value);
+    var entrada_6 = parseInt(document.getElementById('soma2').value);
+    Resultado_Subtrair = (entrada_5 - entrada_6)
+    // Usei o ( isNAN ) para verificar se e falso ou verdadeiro a entrada
+    Tratamento_3 = isNaN(Resultado_Subtrair);
+    // Condição para caso não tenha inserido nenhum numero
+    if (Tratamento_3 === false) {
+        document.getElementById('resultado').value = Resultado_Subtrair;
+    } else {
+        // Impressão da mensagem de erro
+        document.getElementById('resultado').value = '  Sem valores para Calcular'
     }
 
 }
-function Limpar() {
-    alert('Funcionalidade em desenvolvimento...');
-}
 
+function Limpar() {
+    // Essa funcão pega as 2 entradas e a entrada de resultado e coloca tudo com ('') para ficar vazia
+    document.getElementById('resultado').value = '';
+    document.getElementById('soma').value = '';
+    document.getElementById('soma2').value = '';
+}
