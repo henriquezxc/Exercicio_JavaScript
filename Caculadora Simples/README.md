@@ -1,2 +1,2 @@
 # Exercicio_JavaScript
-Meus Exercicios - Iniciante
+Meu primeiro projeto em Js, feito em parceria com Joaca, meu pcr
